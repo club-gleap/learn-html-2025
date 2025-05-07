@@ -31,9 +31,9 @@ body {
     width: 980px;
 }
 
-h1 {
-    padding-top: 20px;
-    margin: 0 0 20px 0; /* 上, 右, 下, 左 */
+.title {
+    padding-top: 40px;
+    margin: 0 0 40px 0; /* 上, 右, 下, 左 */
     text-align: center;
     border-bottom: 4px dotted #c9be72;
 }
@@ -70,8 +70,61 @@ h1 {
     border-radius: 100%;
 }
 
-table {
-    width: 296px;
+#fav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
     font-size: 20px;
-    text-align: left;
+    margin: 0;
+}
+
+#fav img {
+    height: 320px;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table tr {
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+}
+
+table tr:hover {
+    background-color: #d4f0fd;
+}
+
+table th,
+table td {
+    text-align: center;
+    width: 25%;
+    padding: 15px 0;
+}
+
+table td.icon {
+    background-size: 35px;
+    background-position: left 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+table td.icon.bird {
+    background-image: url(icon-bird.png);
+}
+
+table td.icon.whale {
+    background-image: url(icon-whale.png);
+}
+
+table td.icon.crab {
+    background-image: url(icon-crab.png);
 }
